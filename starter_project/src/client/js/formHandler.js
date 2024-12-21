@@ -48,6 +48,7 @@ const postUrl = async (url = '', userUrl = {}) => {
 
 //update the UI with the result
 const updateUI = (data) => {
+    console.log(data);
     // check the polarity and display it in a proper way
     const scoreTag = data.score_tag;
     let polarityText = '';
