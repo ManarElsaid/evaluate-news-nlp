@@ -6,7 +6,10 @@ import { checkForUrl } from './urlChecker'
 const serverURL = 'https://localhost:8081/api'
 
 const form = document.getElementById('urlForm');
-form.addEventListener('submit', handleSubmit);
+
+if (form) {
+    form.addEventListener('submit', handleSubmit);
+}
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -22,6 +25,8 @@ function handleSubmit(event) {
         // If the URL is valid, send it to the server using the serverURL constant above
         postUrl('http://localhost:8081/analyze', {url: userUrl})
         .then(data => updateUI(data));
+    } else {
+        alert("Please, Enter a valid URL");
     }
  
       
@@ -81,7 +86,7 @@ const updateUI = (data) => {
     document.getElementById("polarity").innerHTML = `Polarity: ${polarityText}`;
     document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.subjectivity}`;
     document.getElementById("irony").innerHTML = `Irony: ${data.irony}`;
-    // document.getElementById("text").innerHTML = `Text: ${data.sentence_list[0].text}`;
+    document.getElementById("text").innerHTML = `Text: ${data.sentence_list[0].text}`;
 
 }
 

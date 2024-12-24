@@ -1,5 +1,9 @@
-header {
+$background-color: #3498db;
+header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px;
+    align-items: center;
+    padding: 10px;
+    background-color: $background-color;
+    height: 50px;
 }

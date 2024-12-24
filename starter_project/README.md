@@ -2,9 +2,9 @@
 
 - The udacity web project that allows users to analyze the sentiment, subjectivity, and polarity of text using advanced Natural Language Processing (NLP) techniques.
 
-## Installation
+# Installation
 
-# Prerequisites:
+## Prerequisites:
 - Node.js
 - npm 
 

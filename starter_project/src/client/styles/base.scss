@@ -1,5 +1,8 @@
+$font-stack: Helvetica, sans-serif;
+
 body {
     display: flex;
+    font: 100% $font-stack;
     flex-direction: column;
     min-height: 100vh;
 }

@@ -5,7 +5,7 @@ import { checkForUrl } from './js/urlChecker'
 
 
 
-alert("I EXIST")
+// alert("I EXIST")
 // console.log("CHANGE!!");
 
 // sass files
